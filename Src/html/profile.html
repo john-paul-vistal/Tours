@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Profile</title>
+    <link rel="icon" type="icon/image" href="../Images/Home/logo1.1.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../Css/style.css">
+    <script type="text/javascript" src="../JavaScript/script.js"></script>
+    <script src="https://kit.fontawesome.com/yourcode.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body style="background:rgba(233, 238, 238, 0.842);">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top d-flex justify-content-end">
+        <a href="../html/about.html"><button type="button" class="btn btn-primary my-2 my-lg-1 px-5" data-toggle="modal"
+                data-target="#SignIn">Back</button></a>
+        </button>
+    </nav>
+
+    <div class="jumbotron personalprofile">
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <img src="../Images/johnpaulimages/johnpaul.png" class="rounded-lg  personalprofileimg shadow p-3 mb-5"
+                    alt="Profile Picture">
+            </div>
+            <div class="col-sm-8">
+                <h1>John Paul Vistal</h1>
+                <h2>University of San Carlos ,Talamban Campus</h2>
+                <a href="https://www.gmail.com"><i
+                        class="fa fa-envelope-o p-0"></i>johnpaulvistal@gmail.com&nbsp;&nbsp;&nbsp;</a>
+                <p class="item">|</p>
+                <a href="#" class="item mx-2 mb-4"><i class="fa fa-mobile-phone p-0 mx-0"></i>9300-898-505</a>
+                <p class="item">|</p>
+                <a href="#" class="item mx-2 mb-4"><i class="fa fa-phone p-0 mx-0"></i>422-1951</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container shadow bg-light p-3">
+        <div>
+            <button class="btn btn-outline-primary tablink" onclick="openCity(event,'Info')">Information</button>
+            <button class="btn btn-outline-primary tablink" onclick="openCity(event,'images')">Images</button>
+        </div>
+
+
+        <div id="Info" class="page">
+            <p class="my-4">
+                Hi! I'm John Paul Vistal a simple man with a simple life. I believe that technology was created to be
+                useful and that's the reason why I am so passionate with it. And also I believe that
+                Sharing is loving that's why I want to share my knowledge in computer technology. If you have some
+                question about Computer Technology I am willing to answer it all as long as I know that thing.
+            </p>
+            <hr class="my-5 mx-5">
+            <h4>PERSONAL INFORMATION</h4>
+            <p class="ml-5 my-3"><strong>Name:</strong> John Paul Vito Vistal</p>
+            <p class="ml-5 my-3"><strong>Age:</strong> 18</p>
+            <p class="ml-5 my-3"><strong>Birth Date:</strong> January 4, 2001</p>
+            <p class="ml-5 my-3"><strong>Permanent Address:</strong> Dagnawan,Sagbayan,Bohol</p>
+            <p class="ml-5 my-3"><strong>City Address:</strong> Samjung Building,Nasipit,Talamban,Cebu</p>
+
+            <hr class="my-5 mx-5">
+            <h4>EDUCATIONAL BACKGROUND</h4>
+            <p class="ml-5 my-3"><b>Elementary:</b> &nbsp;Dagnawan Elementary School</p>
+            <p class="ml-5 my-3"><b>Junior High School:</b>&nbsp;San Jose National High School</p>
+            <p class="ml-5 my-3"><b>Senior High School</b>&nbsp;San Agustin National High School</p>
+            <p class="ml-5 my-3"><b>College:</b>&nbsp;University of San Carlos , Talamban Campus</p>
+
+            <hr class="my-5 mx-5">
+            <h4>SKILLS</h4>
+            <P class="ml-5 my-3">•Basic Programming</P>
+            <P class="ml-5 my-3">•Basic Photo Editing </P>
+            <P class="ml-5 my-3">•Web Development</P>
+            <P class="ml-5 my-3">•System Development</P>
+        </div>
+
+        <div id="images" class="page my-4 mx-2" style="display:none">
+
+            <div class="row my-2">
+                <div class="col-sm">
+                    <button type="button" class="btn" data-toggle="modal" data-target="#image1">
+                        <img src="../Images/johnpaulimages/1.jpg" alt="Picture" class="img-fluid">
+                    </button>
+
+                    <div class="modal fade bd-example-modal-xl" id="image1" tabindex="-1" role="dialog"
+                        aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <button type="button" class="close d-flex justify-content-end" data-dismiss="modal"
+                                    aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <img src="../Images/johnpaulimages/1.jpg" alt="Picture" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-sm">
+                    <button type="button" class="btn" data-toggle="modal" data-target="#image2">
+                        <img src="../Images/johnpaulimages/2.jpg" alt="Picture" class="img-fluid">
+                    </button>
+
+                    <div class="modal fade bd-example-modal-x1" id="image2" tabindex="-1" role="dialog"
+                        aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <button type="button" class="close d-flex justify-content-end" data-dismiss="modal"
+                                    aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <img src="../Images/johnpaulimages/2.jpg" alt="Picture" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+
+                    <button type="button" class="btn" data-toggle="modal" data-target="#image3">
+                        <img src="../Images/johnpaulimages/3.JPG" alt="Picture" class="img-fluid">
+                    </button>
+
+
+                    <div class="modal fade bd-example-modal-x1" id="image3" tabindex="-1" role="dialog"
+                        aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <button type="button" class="close d-flex justify-content-end" data-dismiss="modal"
+                                    aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <img src="../Images/johnpaulimages/3.JPG" alt="Picture" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row my-2">
+                <div class="col-sm">
+                    <button type="button" class="btn" data-toggle="modal" data-target="#image4">
+                        <img src="../Images/johnpaulimages/4.jpg" alt="Picture" class="img-fluid">
+                    </button>
+
+                    <div class="modal fade bd-example-modal-x1" id="image4" tabindex="-1" role="dialog"
+                        aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <button type="button" class="close d-flex justify-content-end bg-transparent"
+                                    data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <img src="../Images/johnpaulimages/4.jpg" alt="Picture" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-sm">
+                    <button type="button" class="btn" data-toggle="modal" data-target="#image5">
+                        <img src="../Images/johnpaulimages/5.JPG" alt="Picture" class="img-fluid">
+                    </button>
+
+                    <div class="modal fade bd-example-modal-x1" id="image5" tabindex="-1" role="dialog"
+                        aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <button type="button" class="close d-flex justify-content-end bg-transparent"
+                                    data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <img src="../Images/johnpaulimages/5.jpg" alt="Picture" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-sm">
+                    <button type="button" class="btn" data-toggle="modal" data-target="#image6">
+                        <img src="../Images/johnpaulimages/6.JPG" alt="Picture" class="img-fluid">
+                    </button>
+
+
+                    <div class="modal fade bd-example-modal-x1" id="image6" tabindex="-1" role="dialog"
+                        aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <button type="button" class="close d-flex justify-content-end bg-transparent"
+                                    data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <img src="../Images/johnpaulimages/6.jpg" alt="Picture" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row my-2">
+                <div class="col-sm">
+                    <button type="button" class="btn" data-toggle="modal" data-target="#image7">
+                        <img src="../Images/johnpaulimages/7.jpg" alt="Picture" class="img-fluid">
+                    </button>
+
+                    <div class="modal fade bd-example-modal-x1" id="image7" tabindex="-1" role="dialog"
+                        aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <button type="button" class="close d-flex justify-content-end bg-transparent"
+                                    data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <img src="../Images/johnpaulimages/7.jpg" alt="Picture" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-sm">
+                    <button type="button" class="btn" data-toggle="modal" data-target="#image8">
+                        <img src="../Images/johnpaulimages/8.JPG" alt="Picture" class="img-fluid">
+                    </button>
+
+                    <div class="modal fade bd-example-modal-x1" id="image8" tabindex="-1" role="dialog"
+                        aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <button type="button" class="close d-flex justify-content-end bg-transparent"
+                                    data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <img src="../Images/johnpaulimages/8.jpg" alt="Picture" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-sm">
+                    <button type="button" class="btn" data-toggle="modal" data-target="#image9">
+                        <img src="../Images/johnpaulimages/9.JPG" alt="Picture" class="img-fluid">
+                    </button>
+
+
+                    <div class="modal fade bd-example-modal-x1" id="image9" tabindex="-1" role="dialog"
+                        aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <button type="button" class="close d-flex justify-content-end bg-transparent"
+                                    data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <img src="../Images/johnpaulimages/9.jpg" alt="Picture" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row my-2">
+                <div class="col-sm">
+                    <button type="button" class="btn" data-toggle="modal" data-target="#image10">
+                        <img src="../Images/johnpaulimages/10.jpg" alt="Picture" class="img-fluid">
+                    </button>
+
+                    <div class="modal fade bd-example-modal-x1" id="image10" tabindex="-1" role="dialog"
+                        aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <button type="button" class="close d-flex justify-content-end bg-transparent"
+                                    data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <img src="../Images/johnpaulimages/10.jpg" alt="Picture" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-sm">
+                    <button type="button" class="btn" data-toggle="modal" data-target="#image11">
+                        <img src="../Images/johnpaulimages/11.JPG" alt="Picture" class="img-fluid">
+                    </button>
+
+                    <div class="modal fade bd-example-modal-x1" id="image11" tabindex="-1" role="dialog"
+                        aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <button type="button" class="close d-flex justify-content-end bg-transparent"
+                                    data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <img src="../Images/johnpaulimages/11.jpg" alt="Picture" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-sm">
+                    <button type="button" class="btn" data-toggle="modal" data-target="#image12">
+                        <img src="../Images/johnpaulimages/12.JPG" alt="Picture" class="img-fluid">
+                    </button>
+
+
+                    <div class="modal fade bd-example-modal-x1" id="image12" tabindex="-1" role="dialog"
+                        aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <button type="button" class="close d-flex justify-content-end bg-transparent"
+                                    data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <img src="../Images/johnpaulimages/12.jpg" alt="Picture" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row my-2">
+                <div class="col-sm">
+                    <button type="button" class="btn" data-toggle="modal" data-target="#image13">
+                        <img src="../Images/johnpaulimages/13.jpg" alt="Picture" class="img-fluid">
+                    </button>
+
+                    <div class="modal fade bd-example-modal-x1" id="image13" tabindex="-1" role="dialog"
+                        aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <button type="button" class="close d-flex justify-content-end bg-transparent"
+                                    data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <img src="../Images/johnpaulimages/13.jpg" alt="Picture" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-sm">
+                    <button type="button" class="btn" data-toggle="modal" data-target="#image14">
+                        <img src="../Images/johnpaulimages/14.JPG" alt="Picture" class="img-fluid">
+                    </button>
+
+                    <div class="modal fade bd-example-modal-x1" id="image14" tabindex="-1" role="dialog"
+                        aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <button type="button" class="close d-flex justify-content-end bg-transparent"
+                                    data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <img src="../Images/johnpaulimages/14.jpg" alt="Picture" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-sm">
+                    <button type="button" class="btn" data-toggle="modal" data-target="#image15">
+                        <img src="../Images/johnpaulimages/15.JPG" alt="Picture" class="img-fluid">
+                    </button>
+
+
+                    <div class="modal fade bd-example-modal-x1" id="image15" tabindex="-1" role="dialog"
+                        aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <button type="button" class="close d-flex justify-content-end bg-transparent"
+                                    data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <img src="../Images/johnpaulimages/15.jpg" alt="Picture" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>>
+
+            <div class="row my-2">
+                <div class="col-sm">
+                    <button type="button" class="btn" data-toggle="modal" data-target="#image16">
+                        <img src="../Images/johnpaulimages/16.jpg" alt="Picture" class="img-fluid">
+                    </button>
+
+                    <div class="modal fade bd-example-modal-x1" id="image16" tabindex="-1" role="dialog"
+                        aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <button type="button" class="close d-flex justify-content-end bg-transparent"
+                                    data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <img src="../Images/johnpaulimages/16.jpg" alt="Picture" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-sm">
+                    <button type="button" class="btn" data-toggle="modal" data-target="#image17">
+                        <img src="../Images/johnpaulimages/17.JPG" alt="Picture" class="img-fluid">
+                    </button>
+
+                    <div class="modal fade bd-example-modal-x1" id="image17" tabindex="-1" role="dialog"
+                        aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <button type="button" class="close d-flex justify-content-end bg-transparent"
+                                    data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <img src="../Images/johnpaulimages/17.jpg" alt="Picture" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-sm">
+                    <button type="button" class="btn" data-toggle="modal" data-target="#image18">
+                        <img src="../Images/johnpaulimages/18.JPG" alt="Picture" class="img-fluid">
+                    </button>
+
+
+                    <div class="modal fade bd-example-modal-x1" id="image18" tabindex="-1" role="dialog"
+                        aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <button type="button" class="close d-flex justify-content-end bg-transparent"
+                                    data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <img src="../Images/johnpaulimages/18.jpg" alt="Picture" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        function openCity(evt, page) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("page");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace("color", "");
+            }
+            document.getElementById(page).style.display = "block";
+            evt.currentTarget.className += "";
+        }
+    </script>
+    </div>
+
+
+
+
+    <footer class="mt-5 bg-dark">
+        <hr class="mt-5 mb-3">
+        <div class="footer">
+            <div>
+                <img class="footerlogo mx-3 my-3 d-inline jpdev bg-light rounded-circle"
+                    src="../Images/johnpaulimages/logo1.2.png" alt="Logo">
+                <h4 class="d-inline text-light">JP Web Development</h4>
+            </div>
+            <div>
+                <div class="d-flex justify-content-start ml-4">
+                    <h6 class="text-light">CONNECT WITH ME</h6>
+                    <br>
+                    <div class="d-flex justify-content-end">
+                        <a href="https://www.facebook.com" class="fa fa-facebook mx-sm-2"></a>
+                        <a href="https://twitter.com" class="fa fa-twitter mx-sm-2"></a>
+                        <a href="https://www.instagram.com" class="fa fa-instagram mx-sm-2"></a>
+                        <a href="https://www.google.com" class="fa fa-google mx-sm-2"></a>
+                        <a href="www.youtube.com" class="fa fa-youtube mx-sm-2"></a>
+                        <a href="https://github.com" class="fa fa-github mx-sm-2"></a>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-end mr-5">
+                    <p class="item mx-2 mb-4 text-light">&copy;2019 John Paul Vistal. All rights reserved.</p>
+                    <p class="item">|</p>
+                    <a href="#" class="item mx-2 mb-4">Copyright Policy</a>
+                    <p class="item">|</p>
+                    <a href="#" class="item mx-2 mb-4">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="../Images/Home/up.png" alt="UP"
+            class="up"></button>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+</body>
+
+</html>

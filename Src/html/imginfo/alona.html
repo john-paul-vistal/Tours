@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Alona Beach</title>
+    <link rel="icon" type="icon/image" href="../../Images/Home/logo1.1.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../../Css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top d-flex justify-content-end">
+        <button type="button" class="btn btn-primary my-2 my-lg-1 px-5" data-toggle="modal" data-target="#SignIn"
+            onclick="goBack()">Back</button>
+        </button>
+    </nav>
+    <div class="jumbotron jumbotron-fluid d-flex justify-content-center infoimgheader">
+        <p class="fontsize text-black">𝓑𝓞𝓗𝓞𝓛 𝓣𝓞𝓤𝓡𝓘𝓢𝓣 𝓐𝓣𝓣𝓡𝓐𝓒𝓣𝓘𝓞𝓝</p>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <img src="../../Images/Images/alona1.jpg" alt="Pictures" class="shadow p-2 infoimg bg-light">
+            </div>
+            <div class="col-sm-7 infobutton">
+                <h1>ALONA BEACH</h1>
+                <p>PANGLAO ISLAND, BOHOL</p>
+                <p>OPEN FOR BOOKING</p>
+                <a href="../reservation.html"><button class="btn btn-secondary mx-1 shadow">VISIT</button></a>
+                <a style="text-decoration:none;" target="_blank" href="https://www.google.com/maps/dir/10.3622224,123.9192341/Alona+Beach,+Bohol/@9.9579023,124.0470961,10z/data=!4m10!4m9!1m1!4e1!1m5!1m1!1s0x33abac9f32e574a7:0x48e7cb35746858e1!2m2!1d123.7740322!2d9.5485549!3e0">
+                    <button class="btn btn-secondary mx-1 shadow">DIRECTIONS</button>
+                </a>
+                <button class="btn btn-secondary mx-1 shadow" onclick="alertfunction()">ADD TO WISHLIST</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-4 shadow p-5 bg-light">
+        <div class="container">
+            <h4>INFORMATION</h4>
+            <p>
+                Alona Beach is a small stretch of tropical paradise on Panglao Island, Bohol in the Philippines. It is
+                quickly becoming one of the top travel destinations in the Philippines because of it's wonderful white
+                sand beach, beautiful blue waters, world class diving and tours.
+            </p>
+            <p>
+                Alona Beach is easy to get to, has tons of Hotels and Resorts and plenty to do and see. It's a
+                must-visit while you are in the Philippines and it's proximity to world famous sites in Bohol such as
+                the Chocolate Hills, Tarsier Sanctuary and Loboc River make it an ideal base for exploring Panglao,
+                Bohol and the rest of the Philippines.
+            </p>
+            <p>
+                Alona Beach is a small, quiet, tropical paradise located on Panglao Island, right at the southwestern
+                tip of Bohol in the Philippines. It is famous for it's beautiful white sand beach and great scuba
+                diving, but it's also a great place to just sit back and relax...
+            </p>
+        </div>
+
+        <div class="container mt-4">
+            <h4>PICTURES</h4>
+            <div class="container mt-3">
+                <div class="row">
+                    <div class="col-sm mx-2">
+                        <img src="../../Images/Images/alona2.jpg" alt="Picture" class="shadow imgsize">
+                    </div>
+                    <div class="col-sm mx-2">
+                        <img src="../../Images/Images/alona3.jpg" alt="Picture" class="shadow imgsize">
+                    </div>
+                </div>
+                <div class="row mt-4 mx-1">
+                    <img src="../../Images/Images/alona4.jpg" alt="Picture" class="shadow imgsize1">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="mt-5 bg-dark">
+        <hr class="mt-2">
+        <div class="footer">
+            <div>
+                <img class="footerlogo mx-3 my-3 d-inline" src="../../Images/Home/logo.png" alt="Logo">
+                <h4 class="d-inline text-light">BOHOL TOURISM</h4>
+            </div>
+            <div>
+                <div class="d-flex justify-content-start ml-3">
+                    <h6 class="text-light">CONNECT WITH US</h6>
+                    <br>
+                    <div class="d-flex justify-content-end">
+                        <a href="https://www.facebook.com" class="fa fa-facebook mx-sm-2"></a>
+                        <a href="https://twitter.com" class="fa fa-twitter mx-sm-2"></a>
+                        <a href="https://www.instagram.com" class="fa fa-instagram mx-sm-2"></a>
+                        <a href="https://www.google.com" class="fa fa-google mx-sm-2"></a>
+                        <a href="www.youtube.com" class="fa fa-youtube mx-sm-2"></a>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-end mr-5">
+                    <p class="item mx-2 mb-4 text-light">&copy;2019 John Paul Vistal. All rights reserved.</p>
+                    <p class="item">|</p>
+                    <a href="#" class="item mx-2 mb-4">Copyright Policy</a>
+                    <p class="item">|</p>
+                    <a href="#" class="item mx-2 mb-4">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="../../Images/Home/up.png" alt="UP" class="up"></button>
+    <script>
+        var mybutton = document.getElementById("myBtn");
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+        function alertfunction() {
+            alert("Sorry! This is not available at this time!\n\nWe will let you know if this is already available");
+        }
+
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+
+</html>

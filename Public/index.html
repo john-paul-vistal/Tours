@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bohol Tourism</title>
+  <link rel="icon" type="icon/image" href="../Src/Images/Home/logo1.1.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../Src/Css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+</head>
+
+<body style="background:rgba(233, 238, 238, 0.842);">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+    <img src="../Src/Images/Home/Bohol.png" class="icon mr-sm-2">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+
+        <li class="nav-item active">
+          <a class="nav-link mx-sm-4" href="../Public/index.html">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link  mx-sm-4" href="../Src/html/images.html
+          ">Images</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link  mx-sm-4" href="../Src/html/about.html">About</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle mx-sm-4" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            More
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="../Src/html/messages.html">Message</a>
+            <a class="dropdown-item" href="../Src/html/post.html">Post</a>
+            <a class="dropdown-item" href="../Src/html/reservation.html">Book a Trip</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#" onclick="alertfunction()">Suggestions</a>
+          </div>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-1" id="search">
+        <div class="input-group mr-3">
+          <input type="search" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Search">
+          <div class="input-group-append">
+            <button onclick="alertfunction()" class="btn btn-outline-primary" type="button" id="button-addon2"><i class="fa fa-search seacrhicon"></i></button>
+          </div>
+        </div>
+        <button type="button" class="btn btn-primary my-2 my-lg-1" data-toggle="modal" data-target="#SignIn">
+          Log In
+        </button>
+      </form>
+
+    </div>
+  </nav>
+
+
+  <div class="modal fade" id="SignIn" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Log In</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Remember me</label>
+              <a href="#" class="d-flex justify-content-end">Forgot password?</a>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+              <button onclick="alertfunction()" type="submit" class="btn btn-primary">Login</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="jumbotron header">
+    <br><br><br><br>
+    <img src="../Src/Images/Home/bohol.svg" alt="GIF" style="width:400px;margin-top: 70px;margin-left: -30px;">
+    <p class="lead text-white">The place that you want to live and you will never forget</p>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#SignUpModal">
+      Sign Up to Learn More</button>
+
+    <div class="modal fade" id="SignUpModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body signup">
+            <input class="form-control mr-sm-2 mt-sm-3" type="input" placeholder="Name" aria-label="Name">
+            <input class="form-control mr-sm-2 mt-sm-3" type="email" placeholder="Email" aria-label="Email">
+            <input class="form-control mr-sm-2 mt-sm-3" type="password" placeholder="Password" aria-label="Password">
+            <input class="form-control mr-sm-2 mt-sm-3" type="password" placeholder="Confirm Password" aria-label="Confirm">
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button onclick="alertfunction()" type="submit" class="btn btn-primary">Save Changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container my-sm-5">
+    <hr class="my-4 mt-sm-5">
+    <div class="row">
+      <div class="col-sm">
+        <img src="../Src/Images/Home/map.jpg" class="googleimage shadow p-2 mb-3 bg-light">
+      </div>
+      <div class="col-sm">
+        <h2>BOHOL</h2>
+        <p>Bohol is a province of the Philippines, in the country’s Central Visayas region. It comprises Bohol Island
+          and numerous smaller surrounding islands. Bohol is known for coral reefs and unusual geological formations,
+          notably the Chocolate Hills. On the main island, near the town of Carmen, these 1,200 or so symmetrical
+          mounds turn cocoa-brown in the dry season, contrasting with the surrounding jungle's greenery.</p>
+        </p>
+        <div class="collapse" id="collapseExample">
+          <div class="card card-body p-0 bg-transparent border-0">
+            <p>The island province of Bohol has much to offer in terms of history and natural attractions. One of the
+              loveliest islands in the Visayas, Bohol's coastline is skimmed by gentle coves and white sand beaches
+              Many highways snake along pristine beaches and rustic rivers where the tourist can stop at any point and
+              jump in.</p>
+
+            <p>The province’s dive spots, of which there are about a dozen, are said to be among the world's best.
+              Bohol is located in the central portion of the Visayas lying between Cebu to the northwest and Leyte to
+              the northeast. The province is about 700 kilometers south of Manila and 70 kilometers southeast of Mactan
+              Island.</p>
+
+            <p>Bohol is like a jade brooch set on a velvet-blue sea. Its fertile land has hills that roll gently around
+              lush forests and grassy meadows. Marine life - from schools of tiny reef fish to bigger pods of dolphins
+              and whales - teem in the surrounding waters.</p>
+
+            <p>The province is the perfect arena for scuba diving, kayaking, trekking and cave exploration. For the
+              less adventurous, it offers leisurely pursuits like cruising, swimming, snorkeling or, simply, collecting
+              seashells by the seashore.</p>
+          </div>
+        </div>
+        <button id="read" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample"
+          aria-expanded="false" aria-controls="collapseExample" onclick="changetext()">Read More</button>
+        <script>
+          function changetext() {
+            var x = document.getElementById("read");
+            if (x.innerHTML === "Read More") {
+              x.innerHTML = "Read Less";
+            } else {
+              x.innerHTML = "Read More";
+            }
+          }
+        </script>
+      </div>
+    </div>
+  </div>
+
+  <div class="container slider">
+    <hr class="my-4 mt-sm-5 ">
+    <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li class="padding active rounded-circle" data-target="#carouselExampleIndicators" data-slide-to="0"></li>
+        <li class="padding rounded-circle" data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li class="padding rounded-circle" data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li class="padding rounded-circle" data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100 imageslider" src="../Src/Images/Home/choco2.jpg" alt="First slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>PLACES</h3>
+            <p>Visit the relaxing and picture perfect places in bohol</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100 imageslider" src="../Src/Images/Home/kalamay.png" alt="Second slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>DELICASIES</h3>
+            <p>Taste the sweetest calamay of bohol and all of the delicasies the we produce</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100 imageslider" src="../Src/Images/Home/resort.jpg" alt="Third slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>RESORT</h3>
+            <p>Try this out of this country experience with this elegant resorts</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100 imageslider" src="../Src/Images/Home/hot.jpg" alt="Fouth Slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>ADVENTURE</h3>
+            <p>Try this newest adventure in bohol.Reach the sky with this hot air balloon.</p>
+          </div>
+
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="container my-sm-5">
+    <hr class="my-4 mt-sm-5">
+    <div class="container">
+      <div class="row mt-sm-2 ml-5">
+        <div class="col-sm my-sm-2">
+          <div class="card text-center shadow p-3 mb-5 bg-light" style="width: 25rem;">
+            <img src="../Src/Images/Home/Behold-Bohol-.png" class="card-img-top servicescard" alt="Google Chrome">
+            <div class="card-body">
+              <h5 class="card-title">Visit Bohol</h5>
+              <p class="card-text">
+                See the wonders of nature in bohol.
+              </p>
+              <a href="../Src/html/images.html" class="btn btn-primary">See Images</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm my-sm-2">
+          <div class="card text-center shadow p-3 mb-5 bg-light" style="width: 25rem;">
+            <img src="../Src/Images/Home/onlinebooking.png" class="card-img-top servicescard" alt="Google Mail">
+            <div class="card-body">
+              <h5 class="card-title">Online Booking</h5>
+              <p class="card-text">
+                Book online. Save time and money.</p>
+              <a href="../Src/html/reservation.html" onclick="previewonly()" class="btn btn-primary">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-sm-2 ml-5">
+        <div class="col-sm my-sm-2">
+          <div class="card text-center shadow p-3 mb-5 bg-light" style="width: 25rem;">
+            <img src="../Src/Images/Home/boholgooglemap.png" class="card-img-top servicescard" alt="Google Maps">
+            <div class="card-body">
+              <h5 class="card-title">Bohol Map</h5>
+              <p class="card-text">
+                Find your way use map. This is powered by google maps.
+                <br>
+              </p>
+              <a href="../Src/html/map.html" class="btn btn-primary">Try it Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm my-sm-2">
+          <div class="card text-center shadow p-3 mb-5 bg-light" style="width: 25rem;">
+            <img src="../Src/Images/Home/post.jpg" class="card-img-top servicescard" alt="Google Drive">
+            <div class="card-body">
+              <h5 class="card-title px-4">Post</h5>
+              <p class="card-text">
+                Post your unforgetable experience in bohol and share it to the world.
+              </p>
+              <a href="../Src/html/post.html" onclick="previewonly()" class="btn btn-primary">Try it Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="mt-1 my-1 bg-dark">
+    <hr class="my-3">
+    <div class="footer">
+      <div>
+        <img class="footerlogo mx-3 my-3" src="../Src/Images/Home/logo.png" alt="Logo">
+        <h4 class="d-inline text-light">BOHOL TOURISM</h4>
+      </div>
+      <div>
+        <div class="d-flex justify-content-start ml-3">
+          <h6 class="text-light">CONNECT WITH US</h6>
+          <br>
+          <div class="d-flex justify-content-end">
+            <a href="https://www.facebook.com" class="fa fa-facebook mx-sm-2"></a>
+            <a href="https://twitter.com" class="fa fa-twitter mx-sm-2"></a>
+            <a href="https://www.instagram.com" class="fa fa-instagram mx-sm-2"></a>
+            <a href="https://www.google.com" class="fa fa-google mx-sm-2"></a>
+            <a href="www.youtube.com" class="fa fa-youtube mx-sm-2"></a>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-end mr-5">
+          <p class="item mx-2 mb-4 text-light">&copy;2019 John Paul Vistal. All rights reserved.</p>
+          <p class="item">|</p>
+          <a href="../Src/html/not.html" class="item mx-2 mb-4">Copyright Policy</a>
+          <p class="item">|</p>
+          <a href="../Src/html/not.html" class="item mx-2 mb-4">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="../Src/Images/Home/up.png" alt="UP" class="up"></button>
+  <script>
+    var mybutton = document.getElementById("myBtn");
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+
+    function alertfunction() {
+      alert("Sorry! This is not available at this time!\n\nWe will let you know if this is already available");
+    }
+
+    function previewonly() {
+      alert("This is only a preview.\n\nWe will let you know if this is already available");
+    }
+  </script>
+</body>
+
+</html>

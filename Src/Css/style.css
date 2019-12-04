@@ -1,0 +1,203 @@
+html{
+    scroll-behavior: smooth;
+}
+.icon {
+    width: 130px;
+    height: 60px;
+}
+
+.header {
+    background: url(../Images/Home/bg.jpg) no-repeat center center;
+    background-size: cover;
+    height: 500px;
+}
+
+.imageslider {
+    height: 600px;
+}
+.imageslider1 {
+    height: 500px;
+}
+
+.googleimage {
+    width: 500px;
+    height: 500px;
+}
+
+.title {
+    font-size: 100px;
+}
+
+.servicescard {
+    height: 300px;
+}
+
+.aboutheader {
+    height: 400px;
+    background: url(../Images/Images/bgman.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.profileimg {
+    margin-top: -180px;
+    width: 350px;
+    height: 350px;
+    background: white;
+}
+
+.developer {
+    width: 400px;
+}
+
+.profilebutton{
+    margin-top:-30px;
+}
+
+.item{
+    display: inline;
+    text-decoration: none;
+}
+
+.footer{
+    height: 220px;
+}
+
+.footerlogo{
+    width: 80px;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  .fa-youtube {
+    background: #3B5998;
+    color: white;
+  }
+  .fa-twitter {
+    background: #3B5998;
+    color: white;
+  }
+  .fa-instagram {
+    background: #3B5998;
+    color: white;
+  }
+  .fa-google {
+    background: #3B5998;
+    color: white;
+  }
+
+  .fa-github {
+    background: #3B5998;
+    color: white;
+  }
+
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 3px;
+    border-radius: 150%
+  }
+
+  .fa:hover{
+    color: black
+  }
+
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 60px;
+    right: 5px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius:10px;
+    width: 65px;    
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }
+
+  .personalprofile{
+    height: 400px;
+    background: url(../Images/johnpaulimages/bg.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;   
+  }
+
+  .personalprofileimg{
+    margin-top: -180px;
+    width: 350px;
+    height: 350px;
+    background: white;
+    margin-left: -11px;
+  }
+
+
+  .seacrhicon{
+      padding: 0.89%;
+  }
+
+  .jpdev{
+      width: 100px;
+      height: 93px;
+  }
+
+
+
+.mediaicon{
+    height: 100px;
+    width: 100px ;
+}
+
+.padding{
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.infoimg{
+    margin-top: -160px;
+    margin-left: -60px;
+    width: 500px;
+}
+
+.fontsize{
+    font-size: 65px;
+}
+
+.imgsize{
+    width: 461px;
+    height: 500px;
+}
+
+.imgsize1{
+    width: 970px;
+    height: 500px;
+}
+
+.infoimgheader{
+    background: url(../Images/Images/bginfo.png); 
+    height: 300px;
+}
+
+.up{
+    width: 30px;
+}
+
+.jumbobg{
+    background: url(../Images/Home/ME.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 670px;
+}
+

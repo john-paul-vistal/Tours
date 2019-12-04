@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>About</title>
+    <link rel="icon" type="icon/image" href="../Images/Home/logo1.1.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../Css/style.css">
+    <script type="text/javascript" src="../JavaScript/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body style="background:rgba(233, 238, 238, 0.842);">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+        <img src="../Images/Home/Bohol.png" class="icon mr-sm-2">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link mx-sm-4" href="../../Public/index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link  mx-sm-4" href="../html/images.html">Images</a>
+                </li>
+
+                <li class="nav-item active">
+                    <a class="nav-link  mx-sm-4" href="../html/about.html">About</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle mx-sm-4" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        More
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="../html/messages.html">Message</a>
+                        <a class="dropdown-item" href="../html/post.html">Post</a>
+                        <a class="dropdown-item" href="../html/reservation.html">Book a Trip</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#" onclick="alertfunction()">Suggestions</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-1" id="search">
+                <div class="input-group mr-3">
+                    <input type="search" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="Search">
+                    <div class="input-group-append">
+                        <button onclick="alertfunction()" class="btn btn-outline-primary" type="button"
+                            id="button-addon2"><i class="fa fa-search seacrhicon"></i></button>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary my-2 my-lg-1" data-toggle="modal" data-target="#SignIn">
+                    Log In
+                </button>
+            </form>
+
+        </div>
+    </nav>
+
+    <script>
+        function alertfunction() {
+            alert("Sorry! This is not available at this time!\n\nWe will let you know if this is already available");
+        }
+    </script>
+    <div class="modal fade" id="SignIn" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Log In</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                placeholder="Password">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                            <a href="#" class="d-flex justify-content-end">Forgot password?</a>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                            <button onclick="alertfunction()" type="submit" class="btn btn-primary">Login</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="jumbotron aboutheader">
+    </div>
+
+    <div class="container">
+        <div class="text-center">
+            <img src="../Images/Home/boholicon.png" class="rounded-circle  profileimg shadow p-3 mb-5"
+                alt="Profile Picture">
+                <br>
+                <img src="../Images/Home/WELCOME.svg" alt="GIF" style="width:500px;margin-top:-90px;" class="mb-3">
+            <h4>ABOUT THE WEBSITE</h4>
+            <p class="mx-5">
+                This website is created as a project for the Web Development subject of the creator from the
+                institution of the <strong>University of San Carlos, Cebu</strong>. It is designed for a good user
+                experience and easy to use for the user. The developer applies all the knowledge that he gets from the lessons that they tackle. And
+                Still continuing to improve this website for a better user experience
+            </p>
+            <hr class="my-4 my-sm-5 ">
+            <h4>ABOUT THE CONTENT</h4>
+            <p class="mx-5">
+                The content of this website is the tourist spot and the things that they can visit and do in Bohol. I
+                choose Bohol as my subject because Bohol is my home place and theirs a lot of thins that are
+                Undocumented and not been seen on the internet. This website is promoting all the things in Bohol.
+            </p>
+            <p class="mx-5">
+                This website for now is just a static website blog that shows some information of the tourist spot and
+                activities in Bohol.
+                There is some function that are not available at this time, but the developer is still continuing to
+                develop it for the best experience
+
+            </p>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <hr class="my-4 my-sm-5 ">
+        <div class="row">
+            <div class="col-sm">
+                <img src="../Images/johnpaulimages/jpv.jpg" alt="John Paul Vistal" class="developer shadow p-3 mb-5">
+                <form>
+                    <div class="form-group profilebutton">
+                        <a href="../html/profile.html"><button type="button" class="btn btn-outline-success mr-2">View
+                                Profile</button></a>
+                        <button type="button" class="btn btn-outline-success mx-2" onclick="alertfunction()">Message</button>
+                        <button type="button" class="btn btn-outline-success mx-2" onclick="alertfunction()">Follow</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-sm">
+                <h4>ABOUT THE DEVELOPER</h4>
+                <p>
+                    This website is created by <span> <a href="../html/profile.html">John Paul Vistal</a></span> a
+                    student of the University of San Carlos, Talamban Campus. And at the same time a scholar of the
+                    Passerelles Numeriques organization.
+                </p>
+                <p>
+                    John Paul Vistal pursue his study in Cebu because of his fashion in computer technology. He is
+                    aiming to learn new thing about technology. He is now under the curse of certificate in
+                    Computer technology. A two year course that is specialized by the organization Passerelles
+                    Numeriques.
+                </p>
+                <p>
+                    Vistal's goal in technology is to make it useful for all the people. He is inspired by his teacher
+                    during his High School. His passion in technology is the one who motivates him to continue his
+                    Journey to be one of the innovators of technology in the future.
+                </p>
+                <p>
+                    For more info about the developer just follow him in his social media accounts of visit his profile
+                    below.<br>
+                    <a href="#" class="fa fa-facebook mx-sm-2"></a>
+                    <a href="#" class="fa fa-twitter mx-sm-2"></a>
+                    <a href="#" class="fa fa-instagram mx-sm-2"></a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="mt-5 my-1 bg-dark">
+        <hr class="my-4 my-sm-5">
+        <div class="footer">
+            <div>
+                <img class="footerlogo mx-3 my-3 d-inline" src="../Images/Home/logo.png" alt="Logo">
+                <h4 class="d-inline text-light">BOHOL TOURISM</h4>
+            </div>
+            <div>
+                <div class="d-flex justify-content-start ml-3">
+                    <h6 class="text-light">CONNECT WITH US</h6>
+                    <br>
+                    <div class="d-flex justify-content-end">
+                        <a href="https://www.facebook.com" class="fa fa-facebook mx-sm-2"></a>
+                        <a href="https://twitter.com" class="fa fa-twitter mx-sm-2"></a>
+                        <a href="https://www.instagram.com" class="fa fa-instagram mx-sm-2"></a>
+                        <a href="https://www.google.com" class="fa fa-google mx-sm-2"></a>
+                        <a href="www.youtube.com" class="fa fa-youtube mx-sm-2"></a>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-end mr-5">
+                    <p class="item mx-2 mb-4 text-light">&copy;2019 John Paul Vistal. All rights reserved.</p>
+                    <p class="item">|</p>
+                    <a href="../html/not.html" class="item mx-2 mb-4">Copyright Policy</a>
+                    <p class="item">|</p>
+                    <a href="../html/not.html" class="item mx-2 mb-4">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="../Images/Home/up.png" alt="UP"
+            class="up"></button>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+        function alertfunction() {
+            alert("Sorry! This is not available at this time!\n\nWe will let you know if this is already available");
+        }
+    </script>
+</body>
+
+</html>
